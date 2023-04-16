@@ -8,7 +8,7 @@ const censurado = document.getElementById('mudar');
 formulario.addEventListener('submit', function(e){
     e.preventDefault();
     var mudar = formulario.querySelector('#texto').value;
-    filter.addWords('putaria','porno','pornô','rola','pica','boquete','buceta','priquito','prikito','porra','caralho','carai','karai','pornografia',);
+    filter.addWords('putaria','porno','pornô','rola','pica','boquete','buceta','priquito','prikito','porra','caralho','carai','karai','pornografia');
     if(filter.isProfane(mudar)){
         censurado.innerText= 'ATENÇÃO!\nO texto contém palavras obscenas';
     }
